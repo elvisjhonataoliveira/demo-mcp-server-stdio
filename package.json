@@ -1,0 +1,26 @@
+{
+  "name": "demo-mercadopago-mcp-server",
+  "version": "0.1.0",
+  "description": "A demo Model Context Protocol server for Mercado Pago",
+  "private": true,
+  "type": "module",
+  "files": [
+    "build"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "start": "CLIENT_ID=1767032005372277  CLIENT_SECRET=mLwBWA7Ba3T11vq4vFvcrC8dFczbLBAG nodemon build/index.js",
+    "prepare": "npm run build",
+    "watch": "tsc --watch",
+    "inspector": "npx @modelcontextprotocol/inspector build/index.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^0.7.0",
+    "axios": "^1.7.9",
+    "nodemon": "^3.1.10"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.24",
+    "typescript": "^5.3.3"
+  }
+}
