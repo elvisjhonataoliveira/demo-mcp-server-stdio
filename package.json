@@ -9,7 +9,7 @@
   ],
   "scripts": {
     "build": "tsc",
-    "start": "CLIENT_ID=1767032005372277  CLIENT_SECRET=mLwBWA7Ba3T11vq4vFvcrC8dFczbLBAG nodemon build/index.js",
+    "start": "CLIENT_ID=ID  CLIENT_SECRET=SECRET nodemon build/index.js",
     "prepare": "npm run build",
     "watch": "tsc --watch",
     "inspector": "npx @modelcontextprotocol/inspector build/index.js"
